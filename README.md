@@ -1,2 +1,2 @@
-# samanthashon5.github.io
-Samantha Shon's Portfolio
+# ellygoan.github.io
+Elly Goan's Portfolio
