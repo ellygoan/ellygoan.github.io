@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/projects.css">
+
+  <link rel="icon" href="../assets/icon.png">
+
+  <!--include font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>PROJECTS</title>
+</head>
+
+<body>
+  <a href="https://samanthashon5.github.io/">
+    <img id="back-arrow" src="../assets/back2.png">
+  </a>
+  <p id="title">PROJECTS</p>
+
+ <div class="project-container">
+    <div class="project" id="meter" onclick="openPopup(this)">
+        <div class="over-wrap">
+            <img class="project-image" src="../assets/Underground.png">
+            <div class="hidden-title">UNDERGROUND METER</div>
+        </div>
+    </div>
+
+    <div class="project" id="finder" onclick="openPopup(this)">
+        <div class="over-wrap">
+            <img class="project-image" src="../assets/finder.png">
+            <div class="hidden-title">FINANCIAL DATA FINDER</div>
+        </div>
+    </div>
+
+    <div class="project" id="arcade" onclick="openPopup(this)">
+        <div class="over-wrap">
+            <img class="project-image" src="../assets/arcade1.png">
+            <div class="hidden-title">ARCADE MACHINE</div>
+        </div>
+    </div>
+
+    <div class="project" id="game" onclick="openPopup(this)">
+        <div class="over-wrap">
+            <img class="project-image" src="../assets/game.png">
+            <div class="hidden-title">ADVENTURE GAME</div>
+        </div>
+    </div>
+        
+    <div class="project" id="skateboard" onclick="openPopup(this)">
+        <div class="over-wrap">
+            <img class="project-image" src="../assets/skate1.png">
+            <div class="hidden-title">E-SKATEBOARD</div>
+        </div>
+   </div>
+
+
+
+   <!--------------------------------------------POPUPS---------------------------------------------------->
+
+    <div class = "overlay" id = "overlay-meter">
+    <a href="javascript:void(0)" class="closebtn" id="btn-meter" onclick="closePopup(this)">&times;</a>
+        <div class = "overlay-content">
+            <h1>UNDERGROUND METER</h1>
+            <p>
+                Used Node.js, an API Key, JavaScript, HTML, and CSS to create a Google Chrome Extension that measures the popularity of a user's top 10 artists.
+                <br><br>
+                Through Spotify for Developers, another intern and I were able to create an API Key in order to scrape individual data from each user
+                <br><br> 
+            </p>
+            <a href = "https://github.com/echen078/UndergroundMeter._." target = "_blank">GITHUB</a>
+            <a href = "https://youtu.be/4XxXHG8EN0w" target = "_blank">DEMO</a>
+            <div class="embed">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4XxXHG8EN0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class = "overlay" id = "overlay-finder">
+    <a href="javascript:void(0)" class="closebtn" id="btn-finder" onclick="closePopup(this)">&times;</a>
+        <div class = "overlay-content">
+            <h1>FINANCIAL DATA FINDER</h1>
+            <p>
+                Used pandas, BeautifulSoup, and ChatGPT Developer in Python in order to create a program that scrapes financial data from numerous companies simultaneously. 
+                <br><br>
+                The program finds the financial website of the companies, finds the correct pdf containing the data for the specified quarter and year, then outputs the found information in an Excel spreadsheet.
+                <br><br> 
+            </p>
+            <a href = "https://youtu.be/V4XjsePlagQ" target = "_blank">DEMO</a>
+            <div class="embed">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/V4XjsePlagQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+   </div>
+
+    <div class="overlay" id="overlay-arcade">
+    <a href="javascript:void(0)" class="closebtn" id="btn-arcade" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1>ARCADE MACHINE</h1>
+            <p>
+                Designed and built a custom arcade machine using a Raspberry Pi running RetroPie to emulate classic games.
+                <br><br>
+                Engineered the cabinet by repurposing an old dresser and cutting additional wood components to achieve a retro 
+                aesthetic and ergonomic design.
+                <br><br>
+                Integrated an old computer monitor and speakers, configuring them through RetroPie to ensure seamless audio and 
+                video output.
+                <br><br>
+                Programmed and configured the Raspberry Pi to support a variety of emulators, optimizing performance and controller 
+                mappings for a smooth user experience.
+                <br><br>
+            </p>
+        <div class = "gallery">
+            <img src="../assets/arcade1.png" id="arcade1" alt="arcade1" />
+            <img src="../assets/arcade2.png" id="arcade2" alt="arcade2" />
+            <img src="../assets/arcade3.png" id="arcade3" alt="arcade3" />
+            <img src="../assets/arcade4.png" id="arcade4" alt="arcade4" />
+        </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay-game">
+    <a href="javascript:void(0)" class="closebtn" id="btn-game" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1>ADVENTURE</h1>
+            <p>
+                Developed a multi-level adventure game in C++ with player movement controlled by arrow keys
+                <br><br>
+                Implemented object-oriented design for characters, weapons, armor, and objects
+                <br><br>
+                Designed enemy classes (Snakewomen, Bogeymen, Dragons, Goblins) with distinct stats (weapons, armor, dexterity, strength) and behaviors
+                <br><br>
+                Programmed varied attack ranges and enemy movement patterns
+                <br><br>
+                Built recursive functions to manage game logic and progression through levels
+                <br><br>
+                Created borders, obstacles, and level design to challenge players with increasing difficulty
+            </p>
+            <a href="https://github.com/samanthashon5/CS-32/tree/main/Project%203" target="_blank">GITHUB</a>
+        </div>       
+   </div>
+
+   <div class="overlay" id="overlay-skateboard">
+    <a href="javascript:void(0)" class="closebtn" id="btn-skate" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1>ELECTRIC SKATEBOARD</h1>
+            <p>
+                Designed and built a custom belt-drive electric longboard from scratch
+                <br><br>
+                Handcrafted the longboard deck using wood sourced from Home Depot
+                <br><br>
+                Integrated an ESC (Electronic Speed Controller) and motor
+                <br><br>
+                Installed a belt drive kit with motor mount and 9" trucks for stability and performance
+                <br><br>
+                Implemented a wireless remote control system for smooth and responsive operation
+                <br><br>
+            </p>
+        <div class = "gallery">
+            <img src="../assets/skate1.png" id="skate1" alt="skate1" />
+            <img src="../assets/skate2.png" id="skate2" alt="skate2" />
+            <img src="../assets/skate3.png" id="skate3" alt="skate3" />
+        </div>
+   </div>
+
+   <script src="../js/projects.js"></script>
+</body>
+</html>

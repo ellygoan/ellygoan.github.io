@@ -1,0 +1,264 @@
+* {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    cursor: url('../assets/cursor.png'), auto;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+html {
+    background-color: rgb(0,0,0);
+}
+
+body {
+    margin-top: 50px; /* Adjust this value based on the height of #nav-items */
+    overflow-x: hidden;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    height: 100vh; /* Ensure the full height is used */
+}
+
+
+#star-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 300px;
+    height: auto;
+}
+#starright-gif {
+    position: fixed;
+    top: 8%;
+    left: 10%;
+    z-index:2000;
+    width:200px;
+    height: auto;
+}
+#starright2-gif {
+    position: fixed;
+    top: 8%;
+    left: 20%;
+    z-index: 2000;
+    width: 250px;
+    height: auto;
+}
+#startopright-gif {
+    position: fixed;
+    top: 0;
+    left: 25%;
+    z-index: 2000;
+    width: 200px;
+    height: auto;
+}
+
+#starbottom-gif {
+    position:fixed;
+    top: 15%;
+    left: 0;
+    z-index: 2000;
+    width: 250px;
+    height: auto;
+}
+#starbottom2-gif {
+    position: fixed;
+    top: 25%;
+    left: 0;
+    z-index: 2000;
+    width: 250px;
+    height: auto;
+}
+
+#star2-gif {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+#star2top-gif {
+    position: fixed;
+    bottom: 20%;
+    right: 0;
+    z-index: 2000;
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+#startop2-gif {
+    position: fixed;
+    bottom: 28%;
+    right: 0;
+    z-index: 2000;
+    width: 250px;
+    height: auto;
+    margin: 10px;
+}
+#starbottomleft-gif {
+    position:fixed;
+    bottom: 0;
+    right: 15%;
+    z-index: 2000;
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+#starbottomleft2-gif {
+    position: fixed;
+    bottom: 0;
+    right: 20%;
+    z-index: 2000;
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+#moon {
+    position: fixed;
+    top: 5%;
+    right: 35%;
+    transform: translateX(35%);
+    z-index: 2000;
+    width: 150px;
+    height: auto;
+}
+
+#name{
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+    -webkit-transform:scale(2.5,1); /* Safari and Chrome */
+    transform:scale(1,3); /* W3C */
+    font-size: 1em;
+    letter-spacing: -0.25vh;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+#nav-items {
+    display: flex;
+    justify-content: space-evenly; /* Distributes links evenly */
+    width: 100%; /* Spans the full width of the screen */
+    position: fixed; /* Fixes the container at the top of the screen */
+    top: 0; /* Aligns it at the very top */
+    left: 0; /* Ensures it starts at the left edge */
+    background-color: rgb(0,0,0); /* Matches the page background or adds contrast */
+    padding: 1em 0; /* Adds vertical padding for better spacing */
+    z-index: 1000; /* Ensures it appears above other content */
+}
+
+
+.link {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 0.5em;
+    -webkit-transform:scale(1,0.4); /* Safari and Chrome */
+    transform:scale(0.4,1.5); /* W3C */
+    text-decoration: none;
+}
+
+.link:hover {
+    opacity: 40%;
+    transition: all 0.5s ease-in-out;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: auto;
+}
+
+button {
+    padding: 0.5rem 2.0rem;
+    font-size: 1.75em;
+    -webkit-transform:scale(.6,0.4); /* Safari and Chrome */
+    transform:scale(0.4,1.0); /* W3C */
+    border: none;
+    color: white;
+    font-family: Roboto;
+    background-color: rgb(0,0,0); /* Fallback color in case the image doesn't load */
+}
+
+button:hover {
+    opacity: 40%;
+    transition: all 0.5s ease-in-out;
+}
+
+.email {
+    padding: 0.5rem 2.0rem;
+    font-size: 1.75em;
+    -webkit-transform:scale(.6,0.4); /* Safari and Chrome */
+    transform:scale(0.4,1.0); /* W3C */
+    border: none;
+    color: white;
+    font-family: Roboto;
+    background-color: rgb(0,0,0); /* Fallback color in case the image doesn't load */
+    text-decoration: none;
+}
+.email:hover {
+    opacity: 40%;
+    transition: all 0.5s ease-in-out;
+}
+
+#guy {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    z-index: 1000;
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #name{
+        font-size: 1.5em;
+    }
+    #link-container{
+        flex-direction: row;
+    }
+    .link{
+        margin: 0.5em;
+        font-size: 1em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #name{
+        font-size: 2em;
+    }
+    #link-container{
+        flex-direction: row;
+    }
+    .link{
+        margin: 0.5em;
+        font-size: 1em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #name{
+        font-size: 3em;
+    }
+    #link-container{
+        flex-direction: row;
+    }
+    .link{
+        margin: 0.5em;
+        font-size: 2em;
+    }
+}
