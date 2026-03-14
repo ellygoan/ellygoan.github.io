@@ -204,15 +204,6 @@ button:hover {
     transition: all 0.5s ease-in-out;
 }
 
-#guy {
-    position: absolute;
-    bottom: 10%;
-    left: 20%;
-    z-index: 1000;
-    width: 200px;
-    height: auto;
-    margin: 10px;
-}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
