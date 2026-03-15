@@ -11,7 +11,7 @@ html, body {
 }
 
 html {
-    background-color: rgb(0,0,0);
+    background-color: rgb(211,211,211);
 }
 
 body {
@@ -99,7 +99,7 @@ body {
     background-position: center;
     background-color: black; 
 
-    color: white;
+    color: black;
     font-size: 2.5vh;
     opacity: 0;
     transition: opacity 0.4s ease;
